@@ -1,0 +1,44 @@
+.task-box{
+  flex-grow: 1;
+  min-width: 1000px;
+  background-color: #fefefe;
+}
+.task-box-header{
+  display:flex;
+  align-items: center;
+  padding: 0 50px;
+  padding-top:22px;
+}
+.task-box-title {
+  font-size: 2.5em;
+  padding: 25px 0;
+  font-weight: 500;
+}
+.remove-button {
+  font-size: 1.1em;
+  font-style: italic;
+  margin-left: 35px;
+  padding: 10px 10px;
+  background: none;
+  border: 2px solid red;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+.remove-button:hover{
+  color: #fff;
+  background-color: red;
+  transition: all 0.5s;
+}
+.task-box-body{
+  display:flex;
+  /*水平方向平均分配*/
+  justify-content: space-evenly;
+  /*垂直方向起点对齐*/
+  align-items: flex-start;
+  width: 100%;
+  height: 700px;
+  margin-top: 20px;
+  overflow: auto;
+}
